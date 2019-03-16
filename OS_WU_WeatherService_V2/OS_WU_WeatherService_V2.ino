@@ -36,30 +36,36 @@
 RTC_DATA_ATTR int bootCount = 0;
 const int maxbootCount = 11;
 
-// WiFi and IP request parameters
+// Define rain delay variables allocated in RTC memory
+RTC_DATA_ATTR boolean raindelayActive = false;
+RTC_DATA_ATTR int raindelayCount = 0;
+const int maxrainCount = 11;
+
+// WiFi and WU IP request parameters
 const char *ssid = "yourNetworkName";
 const char *passphrase = "yourNetworkPassword";
 const char *apiKey = "WeatherUndergroundAPIKey";
+const char *stationID = "WeatherUndergroundPWSID";
 const char *v2pws7DayHistory = "v2/pws/dailysummary/7day";
 const char *beginningofSummaries = "\"summaries\":[";
 const char *v2pwsCurrentConditions = "v2/pws/observations/current";
 const char *beginningofObservations = "\"observations\":[";
-const char *stationID = "IFRTH65";
+
 
 // Define Zimmerman base parameters. Please be aware that the baseline for
 // humidity is set to 65%, which reflects local German weather conditions.
 // The Zimmerman standard is 30% humidity. The water level calculations are
-// for temperature and precipitation. Reason for this are the easier Zimmerman
-// calculations and the more accurate weather values reported via the WU API.
+// based on imperial units. Reason for this are the easier Zimmerman
+// calculation and the more accurate weather values reported via the WU API.
 const int humidityBase = 65;
 const float tempBase = 70.0;
 const float precipBase = 0.0;
 
 // Opensprinkler API call parameters
-const String OSlocalIP = "local IP"; //
-const String OSPassword = "pw=device password"; // MD5 hashed
-const String OSChangeOpt = "co?";
-const String OSControlOpt = "cv?";
+const String OSlocalIP = "local IP"; // e.g. http://192.168.178.77/
+const String OSPassword = "device password"; // MD5 hashed
+const String OSChangeOpt = "co?pw=";
+const String OSControlOpt = "cv?pw=";
 const String OSOptionInd = "&o23=";
 const String OSParameter = "&rd=";
 const int rainDelay = 3;
@@ -74,7 +80,7 @@ void setup() {
 	pinMode(WiFiLEDPin, OUTPUT);
 	// Turn WiFiLED, WUInfoLED off
 	digitalWrite(WiFiLEDPin, LOW);
-  // Print the wakeup reason for ESP32
+	// Print the wakeup reason for ESP32
 	print_wakeup_reason();
 
 	// First we configure the wake up source. We set our ESP32 to wake up
@@ -118,31 +124,51 @@ void setup() {
 	HTTPClient http;
   
 	if (currentData[0].precipRate > 0) {
-		// Rain detected - stop sprinkler operation for e.g. 3 hours
+		raindelayActive = true;
+
+		// Rain detected - stop sprinkler operation for e.g. 3 hours. The
+		// Sprinkler operation is stopped for e.g. 3 more hours if it is
+		// still raining after one hour.
 		// e.g. http://ipadress/cv?pw=mypassword&rd=3
-
-		// Send HTTP request to OpenSprinkler
-		http.begin(OSlocalIP + OSControlOpt + OSPassword + OSParameter
+		
+		if ((raindelayActive) && (raindelayCount == 0)) {
+			
+			// Send HTTP request to OpenSprinkler
+			http.begin(OSlocalIP + OSControlOpt + OSPassword + OSParameter
 																+ rainDelay);
-		int httpCode = http.GET();
+			int httpCode = http.GET();
 
-		Serial.println();
-		Serial.print("HTTP request to set a Rain Delay time of ");
-		Serial.print(rainDelay);
-		Serial.println(" h sent !!!");
+			Serial.println();
+			Serial.print("HTTP request to set a Rain Delay time of ");
+			Serial.print(rainDelay);
+			Serial.println(" h sent !!!");
 
-		if (httpCode > 0) { //Check for the returning code
-			String payload = http.getString();
-			Serial.print("HTTP status OK from OS received, Code: ");
-			Serial.print(httpCode);
-			Serial.print(", ");
-			Serial.println(payload);
-		}
+			if (httpCode > 0) { //Check for the returning code
+				String payload = http.getString();
+				Serial.print("HTTP status OK from OS received, Code: ");
+				Serial.print(httpCode);
+				Serial.print(", ");
+				Serial.println(payload);
+			}
  
+			else {
+				Serial.println("Error on HTTP OS rain delay request");
+			}
+		}
+// Increment or reset the rain delay counter
+
+		if (raindelayCount < maxrainCount) {
+			++raindelayCount;
+		}
 		else {
-			Serial.println("Error on HTTP OS rain delay request");
+			raindelayCount = 0;
 		}
 	}
+
+	else {
+		raindelayActive = false;
+	}	
+			
 	// Download the PWS Daily Summary - 7 Day History data - v2
 	// Please note that the history data is updated on a hourly basis by WU
 	// We retrieve the WU historical weather data and update the water level
