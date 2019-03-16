@@ -1,0 +1,399 @@
+12:25:14.082 -> Wakeup was not caused by deep sleep: 0
+12:25:14.082 -> Setup ESP32 to sleep for every 300 Seconds
+12:25:14.176 -> Connecting to Wifi
+12:25:15.160 -> Connected to the WiFi network
+12:25:15.160 -> 192.168.178.36
+12:25:16.754 -> Connected to server
+12:25:16.754 -> HTTPS request to WU API server sent
+12:25:17.082 -> HTTPS status OK from WU API server received
+12:25:17.082 -> Current Weather Conditions:
+12:25:17.082 -> 2019-03-15 12:15:00 -> Precipitation Rate: 0.02 inch, Precipitation: 0.11 inch
+12:25:17.317 -> 
+12:25:17.317 -> HTTP request to set a Rain Delay time of 3 h sent !!!
+12:25:17.457 -> HTTP status OK from OS received, Code: 200, {"result":1}
+12:25:17.457 -> Boot number: 0
+12:25:19.098 -> Connected to server
+12:25:19.098 -> HTTPS request to WU API server sent
+12:25:19.426 -> HTTPS status OK from WU API server received
+12:25:19.473 -> 7 Day Weather History:
+12:25:19.473 -> 2019-03-09 23:56:00 -> Humidity: 80%, Temperature: 46.00 F, Precipitation Rate: 0.07 inch, Precipitation: 0.13 inch
+12:25:19.473 -> 2019-03-10 23:52:00 -> Humidity: 78%, Temperature: 49.00 F, Precipitation Rate: 0.07 inch, Precipitation: 0.23 inch
+12:25:19.473 -> 2019-03-11 23:35:00 -> Humidity: 77%, Temperature: 38.00 F, Precipitation Rate: 0.05 inch, Precipitation: 0.17 inch
+12:25:19.520 -> 2019-03-12 23:57:00 -> Humidity: 65%, Temperature: 42.00 F, Precipitation Rate: 0.01 inch, Precipitation: 0.01 inch
+12:25:19.520 -> 2019-03-13 23:58:00 -> Humidity: 67%, Temperature: 43.00 F, Precipitation Rate: 0.05 inch, Precipitation: 0.06 inch
+12:25:19.520 -> 2019-03-14 23:54:00 -> Humidity: 87%, Temperature: 40.00 F, Precipitation Rate: 0.06 inch, Precipitation: 0.23 inch
+12:25:19.520 -> 2019-03-15 12:15:00 -> Humidity: 88%, Temperature: 42.00 F, Precipitation Rate: 0.05 inch, Precipitation: 0.11 inch
+12:25:19.520 -> 
+12:25:19.520 -> HumidityFactor: -22%, TemperatureFactor: -120.00 %, PrecipitationFactor: -68.00 %
+12:25:19.566 -> 
+12:25:19.566 -> %Watering: -110 % -> %Watering bounded to: 0 %
+12:25:19.566 -> 
+12:25:19.566 -> HTTP request to update the Water Level to OS sent !
+12:25:19.707 -> HTTP status OK from OS received, Code: 200, {"result":1}
+12:25:19.707 -> Disconnected from Wifi
+12:25:19.707 -> 0.0.0.0
+12:25:19.707 -> Going to deep sleep now
+12:30:18.326 -> ets Jun  8 2016 00:22:57
+12:30:18.326 -> 
+12:30:18.326 -> rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+12:30:18.326 -> configsip: 0, SPIWP:0xee
+12:30:18.326 -> clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+12:30:18.326 -> mode:DIO, clock div:1
+12:30:18.326 -> load:0x3fff0018,len:4
+12:30:18.326 -> load:0x3fff001c,len:1100
+12:30:18.373 -> load:0x40078000,len:10088
+12:30:18.373 -> load:0x40080400,len:6380
+12:30:18.373 -> entry 0x400806a4
+12:30:18.654 -> Wakeup caused by timer
+12:30:18.654 -> Setup ESP32 to sleep for every 300 Seconds
+12:30:18.748 -> Connecting to Wifi
+12:30:19.732 -> Connected to the WiFi network
+12:30:19.732 -> 192.168.178.36
+12:30:21.326 -> Connected to server
+12:30:21.326 -> HTTPS request to WU API server sent
+12:30:21.607 -> HTTPS status OK from WU API server received
+12:30:21.607 -> Current Weather Conditions:
+12:30:21.607 -> 2019-03-15 12:15:00 -> Precipitation Rate: 0.02 inch, Precipitation: 0.11 inch
+12:30:22.451 -> 
+12:30:22.451 -> HTTP request to set a Rain Delay time of 3 h sent !!!
+12:30:22.544 -> HTTP status OK from OS received, Code: 200, {"result":1}
+12:30:22.544 -> Boot number: 1
+12:30:22.544 -> Disconnected from Wifi
+12:30:22.544 -> 0.0.0.0
+12:30:22.544 -> Going to deep sleep now
+12:35:21.884 -> ets Jun  8 2016 00:22:57
+12:35:21.884 -> 
+12:35:21.884 -> rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+12:35:21.884 -> configsip: 0, SPIWP:0xee
+12:35:21.884 -> clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+12:35:21.884 -> mode:DIO, clock div:1
+12:35:21.884 -> load:0x3fff0018,len:4
+12:35:21.884 -> load:0x3fff001c,len:1100
+12:35:21.884 -> load:0x40078000,len:10088
+12:35:21.884 -> load:0x40080400,len:6380
+12:35:21.884 -> entry 0x400806a4
+12:35:22.212 -> Wakeup caused by timer
+12:35:22.212 -> Setup ESP32 to sleep for every 300 Seconds
+12:35:22.259 -> Connecting to Wifi
+12:35:23.244 -> Connected to the WiFi network
+12:35:23.244 -> 192.168.178.36
+12:35:24.790 -> Connected to server
+12:35:24.837 -> HTTPS request to WU API server sent
+12:35:25.119 -> HTTPS status OK from WU API server received
+12:35:25.119 -> Current Weather Conditions:
+12:35:25.119 -> 2019-03-15 12:15:00 -> Precipitation Rate: 0.02 inch, Precipitation: 0.11 inch
+12:35:25.447 -> 
+12:35:25.447 -> HTTP request to set a Rain Delay time of 3 h sent !!!
+12:35:25.540 -> HTTP status OK from OS received, Code: 200, {"result":1}
+12:35:25.540 -> Boot number: 2
+12:35:25.540 -> Disconnected from Wifi
+12:35:25.540 -> 0.0.0.0
+12:35:25.540 -> Going to deep sleep now
+12:40:24.746 -> ets Jun  8 2016 00:22:57
+12:40:24.793 -> 
+12:40:24.793 -> rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+12:40:24.793 -> configsip: 0, SPIWP:0xee
+12:40:24.793 -> clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+12:40:24.793 -> mode:DIO, clock div:1
+12:40:24.793 -> load:0x3fff0018,len:4
+12:40:24.793 -> load:0x3fff001c,len:1100
+12:40:24.793 -> load:0x40078000,len:10088
+12:40:24.793 -> load:0x40080400,len:6380
+12:40:24.793 -> entry 0x400806a4
+12:40:25.074 -> Wakeup caused by timer
+12:40:25.121 -> Setup ESP32 to sleep for every 300 Seconds
+12:40:25.121 -> Connecting to Wifi
+12:40:26.152 -> Connected to the WiFi network
+12:40:26.152 -> 192.168.178.36
+12:40:27.699 -> Connected to server
+12:40:27.747 -> HTTPS request to WU API server sent
+12:40:28.029 -> HTTPS status OK from WU API server received
+12:40:28.029 -> Current Weather Conditions:
+12:40:28.029 -> 2019-03-15 12:25:00 -> Precipitation Rate: 0.01 inch, Precipitation: 0.11 inch
+12:40:28.263 -> 
+12:40:28.263 -> HTTP request to set a Rain Delay time of 3 h sent !!!
+12:40:28.404 -> HTTP status OK from OS received, Code: 200, {"result":1}
+12:40:28.404 -> Boot number: 3
+12:40:28.404 -> Disconnected from Wifi
+12:40:28.450 -> 0.0.0.0
+12:40:28.450 -> Going to deep sleep now
+12:45:27.723 -> ets Jun  8 2016 00:22:57
+12:45:27.723 -> 
+12:45:27.723 -> rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+12:45:27.723 -> configsip: 0, SPIWP:0xee
+12:45:27.723 -> clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+12:45:27.723 -> mode:DIO, clock div:1
+12:45:27.723 -> load:0x3fff0018,len:4
+12:45:27.723 -> load:0x3fff001c,len:1100
+12:45:27.723 -> load:0x40078000,len:10088
+12:45:27.723 -> load:0x40080400,len:6380
+12:45:27.723 -> entry 0x400806a4
+12:45:28.053 -> Wakeup caused by timer
+12:45:28.053 -> Setup ESP32 to sleep for every 300 Seconds
+12:45:28.100 -> Connecting to Wifi
+12:45:29.131 -> Connected to the WiFi network
+12:45:29.131 -> 192.168.178.36
+12:45:30.631 -> Connected to server
+12:45:30.678 -> HTTPS request to WU API server sent
+12:45:30.912 -> HTTPS status OK from WU API server received
+12:45:30.912 -> Current Weather Conditions:
+12:45:30.912 -> 2019-03-15 12:25:00 -> Precipitation Rate: 0.01 inch, Precipitation: 0.11 inch
+12:45:37.102 -> 
+12:45:37.102 -> HTTP request to set a Rain Delay time of 3 h sent !!!
+12:45:37.149 -> HTTP status OK from OS received, Code: 200, {"result":1}
+12:45:37.149 -> Boot number: 4
+12:45:37.149 -> Disconnected from Wifi
+12:45:37.149 -> 0.0.0.0
+12:45:37.149 -> Going to deep sleep now
+12:50:36.600 -> ets Jun  8 2016 00:22:57
+12:50:36.600 -> 
+12:50:36.600 -> rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+12:50:36.600 -> configsip: 0, SPIWP:0xee
+12:50:36.600 -> clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+12:50:36.647 -> mode:DIO, clock div:1
+12:50:36.647 -> load:0x3fff0018,len:4
+12:50:36.647 -> load:0x3fff001c,len:1100
+12:50:36.647 -> load:0x40078000,len:10088
+12:50:36.647 -> load:0x40080400,len:6380
+12:50:36.647 -> entry 0x400806a4
+12:50:36.928 -> Wakeup caused by timer
+12:50:36.928 -> Setup ESP32 to sleep for every 300 Seconds
+12:50:36.975 -> Connecting to Wifi
+12:50:37.960 -> Connected to the WiFi network
+12:50:37.960 -> 192.168.178.36
+12:50:39.591 -> Connected to server
+12:50:39.591 -> HTTPS request to WU API server sent
+12:50:39.966 -> HTTPS status OK from WU API server received
+12:50:39.966 -> Current Weather Conditions:
+12:50:39.966 -> 2019-03-15 12:34:00 -> Precipitation Rate: 0.00 inch, Precipitation: 0.11 inch
+12:50:39.966 -> Boot number: 5
+12:50:39.966 -> Disconnected from Wifi
+12:50:39.966 -> 0.0.0.0
+12:50:39.966 -> Going to deep sleep now
+12:55:39.038 -> ets Jun  8 2016 00:22:57
+12:55:39.038 -> 
+12:55:39.038 -> rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+12:55:39.038 -> configsip: 0, SPIWP:0xee
+12:55:39.038 -> clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+12:55:39.038 -> mode:DIO, clock div:1
+12:55:39.038 -> load:0x3fff0018,len:4
+12:55:39.038 -> load:0x3fff001c,len:1100
+12:55:39.085 -> load:0x40078000,len:10088
+12:55:39.085 -> load:0x40080400,len:6380
+12:55:39.085 -> entry 0x400806a4
+12:55:39.367 -> Wakeup caused by timer
+12:55:39.367 -> Setup ESP32 to sleep for every 300 Seconds
+12:55:39.460 -> Connecting to Wifi
+12:55:40.482 -> Connected to the WiFi network
+12:55:40.482 -> 192.168.178.36
+12:55:42.029 -> Connected to server
+12:55:42.029 -> HTTPS request to WU API server sent
+12:55:42.310 -> HTTPS status OK from WU API server received
+12:55:42.357 -> Current Weather Conditions:
+12:55:42.357 -> 2019-03-15 12:45:00 -> Precipitation Rate: 0.00 inch, Precipitation: 0.11 inch
+12:55:42.357 -> Boot number: 6
+12:55:42.357 -> Disconnected from Wifi
+12:55:42.357 -> 0.0.0.0
+12:55:42.357 -> Going to deep sleep now
+13:00:41.789 -> ets Jun  8 2016 00:22:57
+13:00:41.789 -> 
+13:00:41.789 -> rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+13:00:41.789 -> configsip: 0, SPIWP:0xee
+13:00:41.789 -> clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+13:00:41.789 -> mode:DIO, clock div:1
+13:00:41.789 -> load:0x3fff0018,len:4
+13:00:41.789 -> load:0x3fff001c,len:1100
+13:00:41.789 -> load:0x40078000,len:10088
+13:00:41.789 -> load:0x40080400,len:6380
+13:00:41.789 -> entry 0x400806a4
+13:00:42.117 -> Wakeup caused by timer
+13:00:42.117 -> Setup ESP32 to sleep for every 300 Seconds
+13:00:42.164 -> Connecting to Wifi
+13:00:43.148 -> Connected to the WiFi network
+13:00:43.148 -> 192.168.178.36
+13:00:44.695 -> Connected to server
+13:00:44.742 -> HTTPS request to WU API server sent
+13:00:45.023 -> HTTPS status OK from WU API server received
+13:00:45.023 -> Current Weather Conditions:
+13:00:45.023 -> 2019-03-15 12:45:00 -> Precipitation Rate: 0.00 inch, Precipitation: 0.11 inch
+13:00:45.023 -> Boot number: 7
+13:00:45.023 -> Disconnected from Wifi
+13:00:45.023 -> 0.0.0.0
+13:00:45.023 -> Going to deep sleep now
+13:05:44.184 -> ets Jun  8 2016 00:22:57
+13:05:44.184 -> 
+13:05:44.184 -> rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+13:05:44.184 -> configsip: 0, SPIWP:0xee
+13:05:44.184 -> clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+13:05:44.184 -> mode:DIO, clock div:1
+13:05:44.184 -> load:0x3fff0018,len:4
+13:05:44.184 -> load:0x3fff001c,len:1100
+13:05:44.184 -> load:0x40078000,len:10088
+13:05:44.184 -> load:0x40080400,len:6380
+13:05:44.184 -> entry 0x400806a4
+13:05:44.512 -> Wakeup caused by timer
+13:05:44.512 -> Setup ESP32 to sleep for every 300 Seconds
+13:05:44.559 -> Connecting to Wifi
+13:05:45.543 -> Connected to the WiFi network
+13:05:45.543 -> 192.168.178.36
+13:05:47.184 -> Connected to server
+13:05:47.184 -> HTTPS request to WU API server sent
+13:05:47.606 -> HTTPS status OK from WU API server received
+13:05:47.606 -> Current Weather Conditions:
+13:05:47.606 -> 2019-03-15 12:45:00 -> Precipitation Rate: 0.00 inch, Precipitation: 0.11 inch
+13:05:47.606 -> Boot number: 8
+13:05:47.606 -> Disconnected from Wifi
+13:05:47.606 -> 0.0.0.0
+13:05:47.606 -> Going to deep sleep now
+13:10:46.919 -> ets Jun  8 2016 00:22:57
+13:10:46.919 -> 
+13:10:46.919 -> rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+13:10:46.966 -> configsip: 0, SPIWP:0xee
+13:10:46.966 -> clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+13:10:46.966 -> mode:DIO, clock div:1
+13:10:46.966 -> load:0x3fff0018,len:4
+13:10:46.966 -> load:0x3fff001c,len:1100
+13:10:46.966 -> load:0x40078000,len:10088
+13:10:46.966 -> load:0x40080400,len:6380
+13:10:46.966 -> entry 0x400806a4
+13:10:47.247 -> Wakeup caused by timer
+13:10:47.247 -> Setup ESP32 to sleep for every 300 Seconds
+13:10:47.341 -> Connecting to Wifi
+13:10:48.372 -> Connected to the WiFi network
+13:10:48.372 -> 192.168.178.36
+13:10:49.919 -> Connected to server
+13:10:49.919 -> HTTPS request to WU API server sent
+13:10:50.200 -> HTTPS status OK from WU API server received
+13:10:50.200 -> Current Weather Conditions:
+13:10:50.200 -> 2019-03-15 12:55:00 -> Precipitation Rate: 0.00 inch, Precipitation: 0.11 inch
+13:10:50.200 -> Boot number: 9
+13:10:50.200 -> Disconnected from Wifi
+13:10:50.200 -> 0.0.0.0
+13:10:50.200 -> Going to deep sleep now
+13:15:49.398 -> ets Jun  8 2016 00:22:57
+13:15:49.398 -> 
+13:15:49.398 -> rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+13:15:49.398 -> configsip: 0, SPIWP:0xee
+13:15:49.398 -> clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+13:15:49.398 -> mode:DIO, clock div:1
+13:15:49.398 -> load:0x3fff0018,len:4
+13:15:49.398 -> load:0x3fff001c,len:1100
+13:15:49.398 -> load:0x40078000,len:10088
+13:15:49.398 -> load:0x40080400,len:6380
+13:15:49.398 -> entry 0x400806a4
+13:15:49.726 -> Wakeup caused by timer
+13:15:49.726 -> Setup ESP32 to sleep for every 300 Seconds
+13:15:49.773 -> Connecting to Wifi
+13:15:50.758 -> Connected to the WiFi network
+13:15:50.758 -> 192.168.178.36
+13:15:52.351 -> Connected to server
+13:15:52.351 -> HTTPS request to WU API server sent
+13:15:52.679 -> HTTPS status OK from WU API server received
+13:15:52.679 -> Current Weather Conditions:
+13:15:52.679 -> 2019-03-15 12:55:00 -> Precipitation Rate: 0.00 inch, Precipitation: 0.11 inch
+13:15:52.679 -> Boot number: 10
+13:15:52.679 -> Disconnected from Wifi
+13:15:52.679 -> 0.0.0.0
+13:15:52.679 -> Going to deep sleep now
+13:20:51.764 -> ets Jun  8 2016 00:22:57
+13:20:51.764 -> 
+13:20:51.764 -> rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+13:20:51.764 -> configsip: 0, SPIWP:0xee
+13:20:51.764 -> clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+13:20:51.811 -> mode:DIO, clock div:1
+13:20:51.811 -> load:0x3fff0018,len:4
+13:20:51.811 -> load:0x3fff001c,len:1100
+13:20:51.811 -> load:0x40078000,len:10088
+13:20:51.811 -> load:0x40080400,len:6380
+13:20:51.811 -> entry 0x400806a4
+13:20:52.092 -> Wakeup caused by timer
+13:20:52.092 -> Setup ESP32 to sleep for every 300 Seconds
+13:20:52.186 -> Connecting to Wifi
+13:20:53.217 -> Connected to the WiFi network
+13:20:53.217 -> 192.168.178.36
+13:20:54.764 -> Connected to server
+13:20:54.764 -> HTTPS request to WU API server sent
+13:20:55.045 -> HTTPS status OK from WU API server received
+13:20:55.045 -> Current Weather Conditions:
+13:20:55.045 -> 2019-03-15 13:05:00 -> Precipitation Rate: 0.01 inch, Precipitation: 0.12 inch
+13:20:55.889 -> 
+13:20:55.889 -> HTTP request to set a Rain Delay time of 3 h sent !!!
+13:20:55.983 -> HTTP status OK from OS received, Code: 200, {"result":1}
+13:20:55.983 -> Boot number: 11
+13:20:55.983 -> Disconnected from Wifi
+13:20:55.983 -> 0.0.0.0
+13:20:55.983 -> Going to deep sleep now
+13:25:55.256 -> ets Jun  8 2016 00:22:57
+13:25:55.256 -> 
+13:25:55.256 -> rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+13:25:55.256 -> configsip: 0, SPIWP:0xee
+13:25:55.256 -> clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+13:25:55.256 -> mode:DIO, clock div:1
+13:25:55.256 -> load:0x3fff0018,len:4
+13:25:55.256 -> load:0x3fff001c,len:1100
+13:25:55.256 -> load:0x40078000,len:10088
+13:25:55.303 -> load:0x40080400,len:6380
+13:25:55.303 -> entry 0x400806a4
+13:25:55.585 -> Wakeup caused by timer
+13:25:55.585 -> Setup ESP32 to sleep for every 300 Seconds
+13:25:55.631 -> Connecting to Wifi
+13:25:56.616 -> Connected to the WiFi network
+13:25:56.616 -> 192.168.178.36
+13:25:58.209 -> Connected to server
+13:25:58.209 -> HTTPS request to WU API server sent
+13:25:58.584 -> HTTPS status OK from WU API server received
+13:25:58.584 -> Current Weather Conditions:
+13:25:58.584 -> 2019-03-15 13:15:00 -> Precipitation Rate: 0.01 inch, Precipitation: 0.12 inch
+13:25:59.523 -> 
+13:25:59.523 -> HTTP request to set a Rain Delay time of 3 h sent !!!
+13:25:59.664 -> HTTP status OK from OS received, Code: 200, {"result":1}
+13:25:59.664 -> Boot number: 0
+13:26:01.258 -> Connected to server
+13:26:01.258 -> HTTPS request to WU API server sent
+13:26:01.633 -> HTTPS status OK from WU API server received
+13:26:01.679 -> 7 Day Weather History:
+13:26:01.679 -> 2019-03-09 23:56:00 -> Humidity: 80%, Temperature: 46.00 F, Precipitation Rate: 0.07 inch, Precipitation: 0.13 inch
+13:26:01.679 -> 2019-03-10 23:52:00 -> Humidity: 78%, Temperature: 49.00 F, Precipitation Rate: 0.07 inch, Precipitation: 0.23 inch
+13:26:01.679 -> 2019-03-11 23:35:00 -> Humidity: 77%, Temperature: 38.00 F, Precipitation Rate: 0.05 inch, Precipitation: 0.17 inch
+13:26:01.679 -> 2019-03-12 23:57:00 -> Humidity: 65%, Temperature: 42.00 F, Precipitation Rate: 0.01 inch, Precipitation: 0.01 inch
+13:26:01.726 -> 2019-03-13 23:58:00 -> Humidity: 67%, Temperature: 43.00 F, Precipitation Rate: 0.05 inch, Precipitation: 0.06 inch
+13:26:01.726 -> 2019-03-14 23:54:00 -> Humidity: 87%, Temperature: 40.00 F, Precipitation Rate: 0.06 inch, Precipitation: 0.23 inch
+13:26:01.726 -> 2019-03-15 13:15:00 -> Humidity: 88%, Temperature: 42.00 F, Precipitation Rate: 0.05 inch, Precipitation: 0.12 inch
+13:26:01.726 -> 
+13:26:01.726 -> HumidityFactor: -22%, TemperatureFactor: -120.00 %, PrecipitationFactor: -70.00 %
+13:26:01.726 -> 
+13:26:01.726 -> %Watering: -112 % -> %Watering bounded to: 0 %
+13:26:01.773 -> 
+13:26:01.773 -> HTTP request to update the Water Level to OS sent !
+13:26:01.914 -> HTTP status OK from OS received, Code: 200, {"result":1}
+13:26:01.914 -> Disconnected from Wifi
+13:26:01.914 -> 0.0.0.0
+13:26:01.914 -> Going to deep sleep now
+13:31:01.129 -> ets Jun  8 2016 00:22:57
+13:31:01.129 -> 
+13:31:01.129 -> rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+13:31:01.129 -> configsip: 0, SPIWP:0xee
+13:31:01.129 -> clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+13:31:01.129 -> mode:DIO, clock div:1
+13:31:01.129 -> load:0x3fff0018,len:4
+13:31:01.129 -> load:0x3fff001c,len:1100
+13:31:01.129 -> load:0x40078000,len:10088
+13:31:01.129 -> load:0x40080400,len:6380
+13:31:01.129 -> entry 0x400806a4
+13:31:01.457 -> Wakeup caused by timer
+13:31:01.457 -> Setup ESP32 to sleep for every 300 Seconds
+13:31:01.457 -> Connecting to Wifi
+13:31:02.488 -> Connected to the WiFi network
+13:31:02.488 -> 192.168.178.36
+13:31:04.035 -> Connected to server
+13:31:04.035 -> HTTPS request to WU API server sent
+13:31:04.316 -> HTTPS status OK from WU API server received
+13:31:04.316 -> Current Weather Conditions:
+13:31:04.316 -> 2019-03-15 13:15:00 -> Precipitation Rate: 0.01 inch, Precipitation: 0.12 inch
+13:31:04.550 -> 
+13:31:04.550 -> HTTP request to set a Rain Delay time of 3 h sent !!!
+13:31:04.738 -> HTTP status OK from OS received, Code: 200, {"result":1}
+13:31:04.738 -> Boot number: 1
+13:31:04.785 -> Disconnected from Wifi
+13:31:04.785 -> 0.0.0.0
+13:31:04.785 -> Going to deep sleep now
