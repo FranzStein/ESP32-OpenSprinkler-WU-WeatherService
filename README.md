@@ -1,4 +1,4 @@
-# ESP32-OpenSprinkler-WU-weather-service
+# ESP32-OpenSprinkler-WU-WeatherService
 
 ESP32 program to calculate %Watering for the OpenSprinkler System based on WeatherUndergroud PWS data.
 Current and historical weather data is retrieved from WeatherUnderground by using the free API given to non-commercial Personal Weather Station (PWS) owners. Based on this weather data, the program performs the Zimmerman calculation and sends a corresponding API command to OpenSprinkler in order to update the watering percentage parameter. Additionally, it stops OpenSprinkler watering if there is any rainfall detected by the PWS and reported to WeatherUnderground.
