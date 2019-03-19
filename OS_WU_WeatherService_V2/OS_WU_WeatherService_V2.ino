@@ -155,8 +155,8 @@ void setup() {
 				Serial.println("Error on HTTP OS rain delay request");
 			}
 		}
-// Increment or reset the rain delay counter
 
+		// Increment or reset the rain delay counter
 		if (raindelayCount < maxrainCount) {
 			++raindelayCount;
 		}
@@ -164,9 +164,10 @@ void setup() {
 			raindelayCount = 0;
 		}
 	}
-
+	// No rain anymore, reset rain delay indicator and rain delay counter
 	else {
 		raindelayActive = false;
+		raindelayCount = 0;
 	}	
 			
 	// Download the PWS Daily Summary - 7 Day History data - v2
