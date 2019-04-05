@@ -174,15 +174,23 @@ void setup() {
 	// Please note that the history data is updated on a hourly basis by WU
 	// We retrieve the WU historical weather data and update the water level
 	// parameter of the OpenSprinkler only once per hour !!!
+	//
+	// It is currently not clear if there are 7 or 8 weather objects available?
+	// There exists a case with two 31st March weather objects. This means
+	// that Yesterdays's weather information will be found in structure
+	// historyData[7]. It was in structure historyData[6] before. This needs to
+	// be further investigated! However, the program handles those cases now!!!
 
 	Serial.println("Boot number: " + String(bootCount));
 	
-	Weather historyData[7];
+	Weather historyData[8];
 		if (bootCount == 0) {
 		int n = fetchWUdata(v2pws7DayHistory, stationID, apiKey,
-										historyData, beginningofSummaries, 7);
+										historyData, beginningofSummaries, 8);
 	
-		Serial.println("7 Day Weather History:");
+		Serial.print("7 Day Weather History: ");
+		Serial.print(n);
+		Serial.println(" weather objects retrieved");
 		// Loop through each weather object
 		for (int i = 0; i < n; i++) {
 			// Get a reference to the daily data (not a copy)
@@ -209,9 +217,9 @@ void setup() {
 		float precipFactor;
 		int percentWatering;
 
-		humidityFactor = humidityBase - historyData[5].humidityAvg;
-		tempFactor = (historyData[5].tempAvg - tempBase) * 4;
-		precipFactor = (precipBase - historyData[5].precipTotal
+		humidityFactor = humidityBase - historyData[n-2].humidityAvg;
+		tempFactor = (historyData[n-2].tempAvg - tempBase) * 4;
+		precipFactor = (precipBase - historyData[n-2].precipTotal
 										- currentData[0].precipTotal)* 200;
 
 		Serial.println();
