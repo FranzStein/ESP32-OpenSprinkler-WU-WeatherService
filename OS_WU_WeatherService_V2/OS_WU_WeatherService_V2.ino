@@ -90,15 +90,33 @@ void setup() {
 	Serial.println("Setup ESP32 to sleep for every " 
 									+ String(TIME_TO_SLEEP) + " Seconds");
 
-  	// Connect to Wifi
+	// Try to connect to Wifi Network
+	int no_of_trials = 0;
 	WiFi.begin(ssid, passphrase);
-	while (WiFi.status() != WL_CONNECTED) {
+	while ((WiFi.status() != WL_CONNECTED) && (no_of_trials < 20)) {
 		Serial.println("Connecting to Wifi");
 		digitalWrite(WiFiLEDPin, LOW);
 		delay(500);
 		digitalWrite(WiFiLEDPin, HIGH);
 		delay(500);
+		no_of_trials++;
 	}
+	// Go to deep sleep again if connection isn't possible within 20 seconds
+	if (no_of_trials >= 20) {
+		Serial.println("Connection to the WiFi network failed");
+		// Disconnect from WiFi
+		WiFi.disconnect(true);
+		Serial.println("Disconnected from Wifi");
+		Serial.println(WiFi.localIP());
+
+		// Start going to deep sleep.
+		Serial.println("Going to deep sleep now");
+		delay(1000);
+		Serial.flush(); 
+		esp_deep_sleep_start();
+		Serial.println("This will never be printed");
+	}
+
 	Serial.println("Connected to the WiFi network");
 	Serial.println(WiFi.localIP());
 	// Turn WiFiLED on
