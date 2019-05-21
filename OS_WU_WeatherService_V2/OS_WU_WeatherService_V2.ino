@@ -66,11 +66,11 @@ const String OSlocalIP = "local IP"; // e.g. http://192.168.178.77/
 const String OSPassword = "device password"; // MD5 hashed
 const String OSChangeOpt = "co?pw=";
 const String OSControlOpt = "cv?pw=";
-const String OSOptionInd = "&o23=";
 const String OSOptionInd = "&o2=1&o3=1&o36=1&o23=";
 // Important: Parameters ntp(o2), dhcp(o3) and lg(o36) have to be included in the
 // command to keep NTP, DHCP usage and logging active. Please refer to the OS API
 // Document for more details!
+const String OSParameter = "&rd=";
 const int rainDelay = 3;
 
 void setup() {
