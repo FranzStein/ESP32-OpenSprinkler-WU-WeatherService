@@ -30,7 +30,6 @@ static bool sendRequest(Print &client, const char *request,  const char *ID,
 static bool checkResponse(Stream &client) {
 	char status[32];
 	client.readBytesUntil('\r', status, sizeof(status));
-		
 	// should be "HTTP/1.0 200 OK"
 	return memcmp(status + 9, "200 OK", 6) == 0;
 }
@@ -85,18 +84,18 @@ int fetchWUdata(const char *WUrequest, const char *stationID,
 		Serial.println("Failed to connect to WU API server");
 		return 0;
 	}
-	Serial.println("Connected to server");
+	Serial.println("Connected to WU API server");
 	
 	// Send HTTPS request
 	if (!sendRequest(client, WUrequest, stationID, apiKey)) {
-		Serial.println("Failed to send WU API request");
+		Serial.println("Failed to send request to WU API server");
 		return 0;
 	}
-		Serial.println("HTTPS request to WU API server sent");
+	Serial.println("HTTPS request to WU API server sent");
 		
 	// Check response code
 	if (!checkResponse(client)) {
-		Serial.print("Unexpected HTTPS status from WU API server received");
+		Serial.println("Unexpected HTTPS status from WU API server received");
 		return 0;
 	}
 	
@@ -112,7 +111,7 @@ int fetchWUdata(const char *WUrequest, const char *stationID,
 	}
 						  
 	int n = 0;
-  // We are now in the array, we can read the objects one after the other
+	// We are now in the array, we can read the objects one after the other
 	while (n < maxData) {
 		if (!deserializeWeatherData(client, weatherData[n++])) {
 		  Serial.println("Failed to parse weather data");
