@@ -17,7 +17,7 @@ Requirements:
 The program is tested within the following environment:
  - Netatmo Weather Station consisting of an indoor and an outdoor module, a rain gauge and a wind gauge. The outdoor module is protected by a sun shield
  - Meteoware Plus account, to connect the Netatmo Weather Station to the "Weather Underground" weather network
- - OpenSprinkler, App Version: 1.8.4, Firmware: 2.1.8, Hardware Version: 3.0 -DC
+ - OpenSprinkler, App Version: 2.1.3, Firmware: 2.1.9(2), Hardware Version: 3.1 -DC
 
 PLease note that this program is developed as a substitute for the OpenSprinkler weather service changing now to the "OpenWeatherMap" weather network, which is not supported by Meteoware Plus or Netatmo. The program is based on current and historical weather data. Weather forecasts are not taken into account. The program combines the weather adjustment methods Zimmerman and Automatic Rain Delay. Instead of setting the Watering% to 0 a rain delay of 3 hours is activated in case of rain detection.
 
